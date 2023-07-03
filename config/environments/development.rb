@@ -78,4 +78,8 @@ Rails.application.configure do
   config.hosts << pf_host
 
   config.action_cable.allowed_request_origins = ["https://#{pf_host}"]
+
+  # Allow connections to local server
+  config.hosts.clear
+
 end
